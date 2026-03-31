@@ -5,6 +5,7 @@
 1. Bank Transaction Dataset for Fraud Detection
 2. Online Payments Fraud Detection Dataset
 ```
+---
 
 ## 1. Bank Transaction Dataset for Fraud Detection
 Following the same license as the author Dataset: https://www.kaggle.com/datasets/valakhorasani/bank-transaction-dataset-for-fraud-detection/data
@@ -17,15 +18,15 @@ myproject/
     └── bank_transactions_data_2.csv
 ```
 
-Contents:
+**Contents:**
   - Data Analysis
   - The use of Data Mining Algorithms in Bank Transaction Fraud Detection
   - Finally, ideas of using Data Mining & Machine Learning Algorithms for future fraud prediction.
 
-Why Data Mining & Machine Learning?
+**Why Data Mining & Machine Learning?**
 -    In this dataset, there are 2,000 transactions in 5 mins. So it is impossible for human to trace the transaction record one by one.
 
-Results:
+**Results:**
 ```
 |  Clustering  | Potential Fraud Transaction |
 |--------------|-----------------------------|
@@ -40,11 +41,13 @@ Results:
 
 - OPTICS: 0.48% of the transactions are classified as potential fraud transaction.
 
-Suggestions of using Data Mining & Machine Learning Algorithms for fraud detection step by step:
+**Suggestions of using Data Mining & Machine Learning Algorithms for fraud detection step by step:**
 1.  The models find out "outliers" which are the potential fraud transactions in a short period of time.
 2.  The staff investigate whether they are actually fraudulent transactions or not.
 3.  Label the transaction as Normal / Fraud transaction after investigation.
 4.  Use the labelled dataset to perform classification machine learning, for fraud detection of future transactions.
+
+---
 
 ## 2. Online Payments Fraud Detection Dataset
 Following the same license as the author Dataset: https://www.kaggle.com/datasets/rupakroy/online-payments-fraud-detection-dataset/data
@@ -55,17 +58,19 @@ myproject/
 ├── .ipynb
 └── dataset/
     └── PS_20174392719_1491204439457_log.csv
+└── input/
+    └── input.csv
 ```
 
-Contents:
+**Contents:**
   - Data Analysis
   - Train and using Machine Learning model in Online Payment Transaction Fraud Detection
   - Finally, ideas of training the model with new data from time to time.
 
-Why Machine Learning model prediction?
+**Why Machine Learning model prediction?**
 - The model could analyze the relationship of multiple columns of data for prediction, base on what it learned.
 
-Results:
+**Results:**
 ```
 |  Classification Model | Recall Rate |
 |-----------------------|-------------|
@@ -76,8 +81,10 @@ Results:
 ```
 High Recall is Important: When the cost of false negatives is very high (fraud detection).
 
-Suggestions of using the model prediction step by step:
+**Suggestions of using the model prediction step by step:**
 1. Staff should investigate whether the model flagged transaction is actually a fraudulent transaction.
 2. If YES, label the transaction as a fraud transaction (isFraud = 1). If NOT, label as 0.
 3. Use those new labelled data as training data together with the original dataset.
 4. Repeat the above process to update the model from time to time.
+
+---
